@@ -509,6 +509,7 @@
 				111588651EC6DE8800A8F92B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		111588661EC6DE8800A8F92B /* Build configuration list for PBXNativeTarget "UIButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				111588681EC6DE8800A8F92B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		111588691EC6DE8800A8F92B /* Build configuration list for PBXNativeTarget "UIButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +527,7 @@
 				1115886B1EC6DE8800A8F92B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
