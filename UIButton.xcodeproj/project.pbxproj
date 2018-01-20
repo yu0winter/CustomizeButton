@@ -17,6 +17,14 @@
 		111588701EC6E26D00A8F92B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1115886E1EC6E26D00A8F92B /* Main.storyboard */; };
 		111588721EC722ED00A8F92B /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 111588711EC722ED00A8F92B /* add.png */; };
 		111588761EC73B2700A8F92B /* qq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111588751EC73B2700A8F92B /* qq.jpg */; };
+		11657F00201383E400CA4116 /* CenterButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657EFF201383E400CA4116 /* CenterButtonController.m */; };
+		11657F03201383F800CA4116 /* LeftAndTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F02201383F800CA4116 /* LeftAndTopButtonController.m */; };
+		11657F062013841100CA4116 /* RightAndTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F052013841100CA4116 /* RightAndTopButtonController.m */; };
+		11657F092013842200CA4116 /* BottomLeftButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F082013842200CA4116 /* BottomLeftButtonController.m */; };
+		11657F0C2013843900CA4116 /* BottomRightButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F0B2013843900CA4116 /* BottomRightButtonController.m */; };
+		11657F0F2013847900CA4116 /* ImageViewUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F0E2013847900CA4116 /* ImageViewUpController.m */; };
+		11657F122013849100CA4116 /* ImageViewDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F112013849100CA4116 /* ImageViewDownController.m */; };
+		11657F15201384AB00CA4116 /* ImageIsBiggerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F14201384AB00CA4116 /* ImageIsBiggerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,22 @@
 		1115886F1EC6E26D00A8F92B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		111588711EC722ED00A8F92B /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		111588751EC73B2700A8F92B /* qq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qq.jpg; sourceTree = "<group>"; };
+		11657EFE201383E400CA4116 /* CenterButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterButtonController.h; sourceTree = "<group>"; };
+		11657EFF201383E400CA4116 /* CenterButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterButtonController.m; sourceTree = "<group>"; };
+		11657F01201383F800CA4116 /* LeftAndTopButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftAndTopButtonController.h; sourceTree = "<group>"; };
+		11657F02201383F800CA4116 /* LeftAndTopButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAndTopButtonController.m; sourceTree = "<group>"; };
+		11657F042013841100CA4116 /* RightAndTopButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightAndTopButtonController.h; sourceTree = "<group>"; };
+		11657F052013841100CA4116 /* RightAndTopButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightAndTopButtonController.m; sourceTree = "<group>"; };
+		11657F072013842200CA4116 /* BottomLeftButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomLeftButtonController.h; sourceTree = "<group>"; };
+		11657F082013842200CA4116 /* BottomLeftButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomLeftButtonController.m; sourceTree = "<group>"; };
+		11657F0A2013843900CA4116 /* BottomRightButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomRightButtonController.h; sourceTree = "<group>"; };
+		11657F0B2013843900CA4116 /* BottomRightButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomRightButtonController.m; sourceTree = "<group>"; };
+		11657F0D2013847900CA4116 /* ImageViewUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewUpController.h; sourceTree = "<group>"; };
+		11657F0E2013847900CA4116 /* ImageViewUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewUpController.m; sourceTree = "<group>"; };
+		11657F102013849100CA4116 /* ImageViewDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewDownController.h; sourceTree = "<group>"; };
+		11657F112013849100CA4116 /* ImageViewDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewDownController.m; sourceTree = "<group>"; };
+		11657F13201384AB00CA4116 /* ImageIsBiggerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageIsBiggerController.h; sourceTree = "<group>"; };
+		11657F14201384AB00CA4116 /* ImageIsBiggerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageIsBiggerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +135,22 @@
 				1115883D1EC6DE8800A8F92B /* AppDelegate.m */,
 				1115883F1EC6DE8800A8F92B /* ViewController.h */,
 				111588401EC6DE8800A8F92B /* ViewController.m */,
+				11657EFE201383E400CA4116 /* CenterButtonController.h */,
+				11657EFF201383E400CA4116 /* CenterButtonController.m */,
+				11657F01201383F800CA4116 /* LeftAndTopButtonController.h */,
+				11657F02201383F800CA4116 /* LeftAndTopButtonController.m */,
+				11657F042013841100CA4116 /* RightAndTopButtonController.h */,
+				11657F052013841100CA4116 /* RightAndTopButtonController.m */,
+				11657F072013842200CA4116 /* BottomLeftButtonController.h */,
+				11657F082013842200CA4116 /* BottomLeftButtonController.m */,
+				11657F0A2013843900CA4116 /* BottomRightButtonController.h */,
+				11657F0B2013843900CA4116 /* BottomRightButtonController.m */,
+				11657F0D2013847900CA4116 /* ImageViewUpController.h */,
+				11657F0E2013847900CA4116 /* ImageViewUpController.m */,
+				11657F102013849100CA4116 /* ImageViewDownController.h */,
+				11657F112013849100CA4116 /* ImageViewDownController.m */,
+				11657F13201384AB00CA4116 /* ImageIsBiggerController.h */,
+				11657F14201384AB00CA4116 /* ImageIsBiggerController.m */,
 				1115886E1EC6E26D00A8F92B /* Main.storyboard */,
 				111588451EC6DE8800A8F92B /* Assets.xcassets */,
 				111588471EC6DE8800A8F92B /* LaunchScreen.storyboard */,
@@ -281,9 +321,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11657F00201383E400CA4116 /* CenterButtonController.m in Sources */,
 				111588411EC6DE8800A8F92B /* ViewController.m in Sources */,
+				11657F122013849100CA4116 /* ImageViewDownController.m in Sources */,
 				1115883E1EC6DE8800A8F92B /* AppDelegate.m in Sources */,
+				11657F15201384AB00CA4116 /* ImageIsBiggerController.m in Sources */,
+				11657F0C2013843900CA4116 /* BottomRightButtonController.m in Sources */,
+				11657F03201383F800CA4116 /* LeftAndTopButtonController.m in Sources */,
+				11657F0F2013847900CA4116 /* ImageViewUpController.m in Sources */,
+				11657F062013841100CA4116 /* RightAndTopButtonController.m in Sources */,
 				1115883B1EC6DE8800A8F92B /* main.m in Sources */,
+				11657F092013842200CA4116 /* BottomLeftButtonController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
