@@ -14,6 +14,7 @@
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArray;
+@property (nonatomic,strong) NSMutableArray *sourceArray;
 
 @end
 
@@ -39,7 +40,7 @@
     {
         cell = [[UITableViewCell alloc]init];
     }
-    cell.textLabel.text = self.dataArray[indexPath.row];
+    cell.textLabel.text = self.sourceArray[indexPath.row];
 
     return cell;
 }
@@ -71,17 +72,35 @@
     if (!_dataArray)
     {
         _dataArray = [[NSMutableArray alloc]initWithObjects:@"CenterButtonController",
+                                  @"ImageViewUpController",
+                                  @"ImageViewDownController",
                                   @"LeftAndTopButtonController",
                                   @"RightAndTopButtonController",
                                   @"BottomLeftButtonController",
                                   @"BottomRightButtonController",
-                                  @"ImageViewUpController",
-                                  @"ImageViewDownController",
                                   @"ImageIsBiggerController",nil];
     }
 
     return _dataArray;
 }
+
+- (NSMutableArray *)sourceArray
+{
+    if (!_sourceArray)
+    {
+        _sourceArray = [[NSMutableArray alloc]initWithObjects:@"图片右文字左",
+                      @"图片上文字下",
+                      @"图片下文字上",
+                      @"图片文字左上角",
+                      @"图片文字右上角",
+                      @"图片文字左下角",
+                      @"图片文字右下角",
+                      @"图片大于按钮宽度",nil];
+    }
+
+    return _sourceArray;
+}
+
 
 @end
 
