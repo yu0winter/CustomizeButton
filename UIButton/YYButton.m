@@ -1,14 +1,14 @@
 //
-//  YYLayoutButton.m
+//  YYButton.m
 //  UIButton
 //
 //  Created by 杨世川 on 18/1/21.
 //  Copyright © 2018年 杨世川. All rights reserved.
 //
 
-#import "YYLayoutButton.h"
+#import "YYButton.h"
 
-@interface YYLayoutButton ()
+@interface YYButton ()
 
 @property (nonatomic,assign) CGFloat titleWidth;
 @property (nonatomic,assign) CGFloat titleHeight;
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation YYLayoutButton
+@implementation YYButton
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -52,23 +52,36 @@
     self.titleLabel.backgroundColor = [UIColor greenColor];
 }
 
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+    if(UIEdgeInsetsEqualToEdgeInsets(self.hitTestEdgeInsets, UIEdgeInsetsZero) || !self.enabled || self.hidden)
+    {
+        return [super pointInside:point withEvent:event];
+    }
+
+    CGRect relativeFrame = self.bounds;
+    CGRect hitFrame = UIEdgeInsetsInsetRect(relativeFrame, self.hitTestEdgeInsets);
+
+    return CGRectContainsPoint(hitFrame, point);
+}
+
 - (void)layoutSubviews
 {
     [super layoutSubviews];
 
     switch (self.imageType) {
         case YYLayoutButtonTypeImageUp:
-             [self imageUp];
-             break;
+            [self imageUp];
+            break;
         case YYLayoutButtonTypeImageDown:
-             [self imageDown];
-             break;
+            [self imageDown];
+            break;
         case YYLayoutButtonTypeImageLeft:
-             [self imageLeft];
-             break;
+            [self imageLeft];
+            break;
         case YYLayoutButtonTypeImageRight:
-             [self imageRight];
-             break;
+            [self imageRight];
+            break;
         default:
             [self imageRight];
             break;
@@ -265,7 +278,3 @@
 
 
 @end
-
-
-
-

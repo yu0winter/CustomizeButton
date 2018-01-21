@@ -75,6 +75,7 @@
                                   @"RectViewController",
                                   @"LayoutViewController",
                                   @"ExpandButtonAreaController",
+                                  @"FinalViewController",
                                   nil];
     }
 
@@ -87,9 +88,10 @@
     {
         _sourceArray = [[NSMutableArray alloc]initWithObjects:
                       @"基础知识",
-                      @"重写系统Rect方法",
-                      @"重写系统layoutSubviews方法",
-                      @"扩大按钮的响应区域",
+                      @"自定义－重写系统Rect方法",
+                      @"自定义－重写系统layoutSubviews方法",
+                      @"自定义－扩大按钮的响应区域",
+                      @"最终封装版",
                       nil];
     }
 

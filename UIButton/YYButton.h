@@ -1,5 +1,5 @@
 //
-//  YYLayoutButton.h
+//  YYButton.h
 //  UIButton
 //
 //  Created by 杨世川 on 18/1/21.
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, YYLayoutPositionType) {
     YYLayoutPositionTypeLeftUnchanged
 };
 
-@interface YYLayoutButton : UIButton
+@interface YYButton : UIButton
 
 //设置图片边距、默认为(0,0,0,0)
 @property (nonatomic,assign) UIEdgeInsets buttonImageEdgeInsets;
@@ -44,5 +44,7 @@ typedef NS_ENUM(NSInteger, YYLayoutPositionType) {
 @property (nonatomic,assign) YYLayoutButtonType imageType;
 //position类型
 @property (nonatomic,assign) YYLayoutPositionType positionType;
+//扩大响应区域
+@property (nonatomic,assign) UIEdgeInsets hitTestEdgeInsets;
 
 @end

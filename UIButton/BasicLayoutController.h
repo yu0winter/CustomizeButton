@@ -1,5 +1,5 @@
 //
-//  ExpandButton.h
+//  BasicLayoutController.h
 //  UIButton
 //
 //  Created by 杨世川 on 18/1/21.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ExpandButton : UIButton
-
-//第二种方法
-@property (nonatomic,assign) UIEdgeInsets hitTestEdgeInsets;
+@interface BasicLayoutController : UIViewController
 
 @end

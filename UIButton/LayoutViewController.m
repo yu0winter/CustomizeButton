@@ -12,7 +12,11 @@
 #define ScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
-@interface LayoutViewController ()
+@interface LayoutViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSMutableArray *dataArray;
+@property (nonatomic,strong) NSMutableArray *sourceArray;
 
 @end
 
@@ -22,84 +26,72 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
-    [self imageUp];
-    [self imageDown];
-    [self imageLeft];
-    [self imageRight];
+    [self.view addSubview:self.tableView];
 }
 
-- (void)imageUp
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    YYLayoutButton *button = [[YYLayoutButton alloc]initWithFrame:CGRectMake(0, 64, 100, 100)];
-    [button setTitle:@"adminadminadmin" forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"touxiang"] forState:UIControlStateNormal];
-
-    //这个是需要自己设置的
-    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    button.imageType = YYLayoutButtonTypeImageUp;
-    //此时只有以下三个数字生效，其余不管怎么设置都不生效
-    button.buttonImageEdgeInsets = UIEdgeInsetsMake(10, 0, 10, 0);
-    button.buttonTitleEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 0);
-
-    button.layer.borderColor = [UIColor redColor].CGColor;
-    button.layer.borderWidth = 2.0;
-    [self.view addSubview:button];
+    return self.dataArray.count;
 }
 
-- (void)imageDown
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    YYLayoutButton *button = [[YYLayoutButton alloc]initWithFrame:CGRectMake(ScreenWidth - 100, 64, 100, 100)];
-    [button setTitle:@"adminadminadmin" forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"touxiang"] forState:UIControlStateNormal];
+    static NSString *cellId = @"cellId";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (!cell)
+    {
+        cell = [[UITableViewCell alloc]init];
+    }
+    cell.textLabel.text = self.sourceArray[indexPath.row];
 
-    //这个是需要自己设置的
-    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    button.imageType = YYLayoutButtonTypeImageDown;
-    //此时只有以下三个数字生效，其余不管怎么设置都不生效
-    button.buttonTitleEdgeInsets = UIEdgeInsetsMake(10, 0, 10, 0);
-    button.buttonImageEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 0);
-
-    button.layer.borderColor = [UIColor redColor].CGColor;
-    button.layer.borderWidth = 2.0;
-    [self.view addSubview:button];
+    return cell;
 }
 
-- (void)imageLeft
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    YYLayoutButton *button = [[YYLayoutButton alloc]initWithFrame:CGRectMake(0, ScreenHeight - 50, 120, 50)];
-    [button setTitle:@"admin" forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"touxiang"] forState:UIControlStateNormal];
-
-    //这个是需要自己设置的
-    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    button.imageType = YYLayoutButtonTypeImageLeft;
-    //此时只有以下三个数字生效，其余不管怎么设置都不生效
-    button.buttonTitleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
-    button.buttonImageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
-
-    button.layer.borderColor = [UIColor redColor].CGColor;
-    button.layer.borderWidth = 2.0;
-    [self.view addSubview:button];
+    NSString *tempString = self.dataArray[indexPath.row];
+    Class viewControl = NSClassFromString(tempString);
+    UIViewController *tempControl = [[viewControl alloc] init];
+    [self.navigationController pushViewController:tempControl animated:YES];
 }
 
-- (void)imageRight
+#pragma mark - Getters and Setters
+- (UITableView *)tableView
 {
-    YYLayoutButton *button = [[YYLayoutButton alloc]initWithFrame:CGRectMake(ScreenWidth - 120, ScreenHeight - 50, 120, 50)];
-    [button setTitle:@"admin" forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"touxiang"] forState:UIControlStateNormal];
+    if (!_tableView)
+    {
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
 
-    //这个是需要自己设置的
-    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    button.imageType = YYLayoutButtonTypeImageRight;
-    //此时只有以下三个数字生效，其余不管怎么设置都不生效
-    button.buttonTitleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
-    button.buttonImageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
-
-    button.layer.borderColor = [UIColor redColor].CGColor;
-    button.layer.borderWidth = 2.0;
-    [self.view addSubview:button];
-
+    return _tableView;
 }
+
+- (NSMutableArray *)dataArray
+{
+    if (!_dataArray)
+    {
+        _dataArray = [[NSMutableArray alloc]initWithObjects:@"BasicLayoutController",
+                      @"DynamicViewController",
+                      nil];
+    }
+
+    return _dataArray;
+}
+
+- (NSMutableArray *)sourceArray
+{
+    if (!_sourceArray)
+    {
+        _sourceArray = [[NSMutableArray alloc]initWithObjects:@"方法静态使用",
+                        @"方法动态使用",
+                        nil];
+    }
+
+    return _sourceArray;
+}
+
 
 
 @end
