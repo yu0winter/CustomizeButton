@@ -30,21 +30,23 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        [self initPara];
+        [self initParaWithFrame:frame];
     }
     return self;
 }
 
 #pragma mark - 初始化参数
-- (void)initPara
+- (void)initParaWithFrame:(CGRect)frame
 {
     self.buttonImageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     self.buttonTitleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     self.imageViewWidth = 0;
     self.imageViewHeight = 0;
     self.titleFont = 15.0;
-    self.imageType = YYLayoutButtonTypeImageRight;
+    self.buttonW = frame.size.width;
+    self.buttonH = frame.size.height;
 
+    self.imageType = YYLayoutButtonTypeImageRight;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.imageView.backgroundColor = [UIColor redColor];
     self.titleLabel.backgroundColor = [UIColor greenColor];
@@ -113,44 +115,30 @@
 - (void)dealImageUpFrame
 {
     //1、imageView
-    self.imageViewX = self.buttonImageEdgeInsets.left;
+    self.imageViewX = (self.frame.size.width/2.0 - self.imageViewWidth/2.0);
     self.imageViewY = self.buttonImageEdgeInsets.top;
+    self.imageView.frame = CGRectMake(self.imageViewX, self.imageViewY, self.imageViewWidth, self.imageViewHeight);
 
     //2、titleLabel
-    self.titleLabelX = self.buttonTitleEdgeInsets.left;
+    self.titleLabelX = 0;
     self.titleLabelY = CGRectGetMaxY(self.imageView.frame) + self.buttonImageEdgeInsets.bottom + self.buttonTitleEdgeInsets.top;
-
-    //3、button的frame
-    CGFloat imageViewW = self.buttonImageEdgeInsets.left + self.buttonImageEdgeInsets.right + self.imageViewWidth;
-    CGFloat imageViewH = self.buttonImageEdgeInsets.top + self.buttonImageEdgeInsets.bottom + self.imageViewHeight;
-    CGFloat titleLabelW = self.buttonTitleEdgeInsets.left + self.buttonTitleEdgeInsets.right + self.titleWidth;
-    CGFloat titleLabelH = self.buttonTitleEdgeInsets.top + self.buttonTitleEdgeInsets.bottom + self.titleHeight;
-
-    self.buttonW = (imageViewW > titleLabelW) ? imageViewW : titleLabelW;
-    self.buttonH = imageViewH + titleLabelH;
-    self.titleWidth = self.buttonW;
+    self.titleWidth = self.frame.size.width;
+    self.titleLabel.frame = CGRectMake(self.titleLabelX, self.titleLabelY, self.titleWidth, self.titleHeight);
 }
 
 #pragma mark - 设置ImageDown的frame
 - (void)dealImageDownFrame
 {
     //1、titleLabel
-    self.titleLabelX = self.buttonTitleEdgeInsets.left;
+    self.titleLabelX = 0;
     self.titleLabelY = self.buttonTitleEdgeInsets.top;
+    self.titleWidth = self.frame.size.width;
+    self.titleLabel.frame = CGRectMake(self.titleLabelX, self.titleLabelY, self.titleWidth, self.titleHeight);
 
     //2、imageView
-    self.imageViewX = self.buttonImageEdgeInsets.left;
+    self.imageViewX = (self.frame.size.width/2.0 - self.imageViewWidth/2.0);
     self.imageViewY = CGRectGetMaxY(self.titleLabel.frame) + self.buttonTitleEdgeInsets.bottom + self.buttonImageEdgeInsets.top;
-
-    //3、button的frame
-    CGFloat imageViewW = self.buttonImageEdgeInsets.left + self.buttonImageEdgeInsets.right + self.imageViewWidth;
-    CGFloat imageViewH = self.buttonImageEdgeInsets.top + self.buttonImageEdgeInsets.bottom + self.imageViewHeight;
-    CGFloat titleLabelW = self.buttonTitleEdgeInsets.left + self.titleEdgeInsets.right + self.titleWidth;
-    CGFloat titleLabelH = self.buttonTitleEdgeInsets.top + self.buttonTitleEdgeInsets.bottom + self.titleHeight;
-
-    self.buttonW = (imageViewW > titleLabelW) ? imageViewW : titleLabelW;
-    self.buttonH = imageViewH + titleLabelH;
-    self.titleWidth = self.buttonW;
+    self.imageView.frame = CGRectMake(self.imageViewX, self.imageViewY, self.imageViewWidth, self.imageViewHeight);
 }
 
 #pragma mark - 设置imageLeft的frame
@@ -158,20 +146,14 @@
 {
     //1、imageView
     self.imageViewX = self.buttonImageEdgeInsets.left;
-    self.imageViewY = self.imageEdgeInsets.top;
+    self.imageViewY = (self.frame.size.height/2.0 - self.imageViewHeight/2.0);
+    self.imageView.frame = CGRectMake(self.imageViewX, self.imageViewY, self.imageViewWidth, self.imageViewHeight);
 
     //2、titleLabel
     self.titleLabelX = CGRectGetMaxX(self.imageView.frame) + self.buttonImageEdgeInsets.right + self.buttonTitleEdgeInsets.left;
-    self.titleLabelY = self.buttonTitleEdgeInsets.top;
-
-    //3、button的frame
-    CGFloat imageViewW = self.buttonImageEdgeInsets.left + self.buttonImageEdgeInsets.right + self.imageViewWidth;
-    CGFloat imageViewH = self.buttonImageEdgeInsets.top + self.buttonImageEdgeInsets.bottom + self.imageViewHeight;
-    CGFloat titleLabelW = self.buttonTitleEdgeInsets.left + self.buttonTitleEdgeInsets.right + self.titleWidth;
-    CGFloat titleLabelH = self.buttonTitleEdgeInsets.top + self.buttonTitleEdgeInsets.bottom + self.titleHeight;
-
-    self.buttonW = imageViewW + titleLabelW;
-    self.buttonH = (imageViewH > titleLabelH) ? imageViewH : titleLabelH;
+    self.titleLabelY = 0;
+    self.titleHeight = self.frame.size.height;
+    self.titleLabel.frame = CGRectMake(self.titleLabelX, self.titleLabelY, self.titleWidth, self.titleHeight);
 }
 
 #pragma mark - 设置imageRight的frame
@@ -179,20 +161,14 @@
 {
     //1、titleLabel
     self.titleLabelX = self.buttonTitleEdgeInsets.left;
-    self.titleLabelY = self.buttonTitleEdgeInsets.top;
+    self.titleLabelY = 0;
+    self.titleHeight = self.frame.size.height;
+    self.titleLabel.frame = CGRectMake(self.titleLabelX, self.titleLabelY, self.titleWidth, self.titleHeight);
 
     //2、imageView
     self.imageViewX = CGRectGetMaxX(self.titleLabel.frame) + self.buttonTitleEdgeInsets.right + self.buttonImageEdgeInsets.left;
-    self.imageViewY = self.buttonImageEdgeInsets.top;
-
-    //3、button
-    CGFloat imageViewW = self.buttonImageEdgeInsets.left + self.buttonImageEdgeInsets.right + self.imageViewWidth;
-    CGFloat imageViewH = self.buttonImageEdgeInsets.top + self.buttonImageEdgeInsets.bottom + self.imageViewHeight;
-    CGFloat titleLabelW = self.buttonTitleEdgeInsets.left + self.buttonTitleEdgeInsets.right + self.titleWidth;
-    CGFloat titleLabelH = self.buttonTitleEdgeInsets.top + self.buttonTitleEdgeInsets.bottom + self.titleHeight;
-
-    self.buttonW = imageViewW + titleLabelW;
-    self.buttonH = (imageViewH > titleLabelH) ? imageViewH : titleLabelH;
+    self.imageViewY = (self.frame.size.height/2.0 - self.imageViewHeight/2.0);
+    self.imageView.frame = CGRectMake(self.imageViewX, self.imageViewY, self.imageViewWidth, self.imageViewHeight);
 }
 
 #pragma mark - 设置imageView的宽高
@@ -203,6 +179,9 @@
     //2、是否需要设置imageViewWidth、imageViewHeight
     CGFloat imageViewWidth = (self.imageViewWidth == 0) ? image.size.width : self.imageViewWidth;
     CGFloat imageViewHeight = (self.imageViewHeight == 0) ? image.size.height : self.imageViewHeight;
+    //3、看是否大于按钮自身的高宽
+    imageViewWidth = (imageViewWidth > self.frame.size.width) ? self.frame.size.width : imageViewWidth;
+    imageViewHeight = (imageViewHeight > self.frame.size.height) ? self.frame.size.height : imageViewHeight;
 
     self.imageViewWidth = imageViewWidth;
     self.imageViewHeight = imageViewHeight;
@@ -233,8 +212,6 @@
     self.titleLabel.frame = CGRectMake(self.titleLabelX, self.titleLabelY, self.titleWidth, self.titleHeight);
     CGRect buttonFrame = self.frame;
     self.frame = CGRectMake(buttonFrame.origin.x, buttonFrame.origin.y, self.buttonW, self.buttonH);
-
-    NSLog(@"self.frame  =%@",NSStringFromCGRect(self.frame));
 }
 
 
