@@ -1,16 +1,17 @@
 //
-//  ViewController.m
+//  BasicViewController.m
 //  UIButton
 //
-//  Created by 杨世川 on 17/5/13.
-//  Copyright © 2017年 杨世川. All rights reserved.
+//  Created by 杨世川 on 18/1/21.
+//  Copyright © 2018年 杨世川. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BasicViewController.h"
+
 #define ScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface BasicViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataArray;
@@ -18,10 +19,9 @@
 
 @end
 
-@implementation ViewController
+@implementation BasicViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 
     [self.view addSubview:self.tableView];
@@ -70,12 +70,14 @@
 {
     if (!_dataArray)
     {
-        _dataArray = [[NSMutableArray alloc]initWithObjects:
-                                  @"BasicViewController",
-                                  @"RectViewController",
-                                  @"LayoutViewController",
-                                  @"ExpandButtonAreaController",
-                                  nil];
+        _dataArray = [[NSMutableArray alloc]initWithObjects:@"CenterButtonController",
+                      @"ImageViewUpController",
+                      @"ImageViewDownController",
+                      @"LeftAndTopButtonController",
+                      @"RightAndTopButtonController",
+                      @"BottomLeftButtonController",
+                      @"BottomRightButtonController",
+                      @"ImageIsBiggerController",nil];
     }
 
     return _dataArray;
@@ -85,17 +87,17 @@
 {
     if (!_sourceArray)
     {
-        _sourceArray = [[NSMutableArray alloc]initWithObjects:
-                      @"基础知识",
-                      @"重写系统Rect方法",
-                      @"重写系统layoutSubviews方法",
-                      @"扩大按钮的响应区域",
-                      nil];
+        _sourceArray = [[NSMutableArray alloc]initWithObjects:@"图片右文字左",
+                        @"图片上文字下",
+                        @"图片下文字上",
+                        @"图片文字左上角",
+                        @"图片文字右上角",
+                        @"图片文字左下角",
+                        @"图片文字右下角",
+                        @"图片大于按钮宽度",nil];
     }
 
     return _sourceArray;
 }
 
-
 @end
-
