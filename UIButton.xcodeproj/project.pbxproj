@@ -26,7 +26,7 @@
 		114519E92014BDC70082A061 /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114519E82014BDC70082A061 /* DynamicViewController.m */; };
 		114519EC2014CF450082A061 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114519EB2014CF450082A061 /* FinalViewController.m */; };
 		114519EF2014CF6F0082A061 /* YYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 114519EE2014CF6F0082A061 /* YYButton.m */; };
-		11657F00201383E400CA4116 /* CenterButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657EFF201383E400CA4116 /* CenterButtonController.m */; };
+		11657F00201383E400CA4116 /* ImageViewRightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657EFF201383E400CA4116 /* ImageViewRightController.m */; };
 		11657F03201383F800CA4116 /* LeftAndTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F02201383F800CA4116 /* LeftAndTopButtonController.m */; };
 		11657F062013841100CA4116 /* RightAndTopButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F052013841100CA4116 /* RightAndTopButtonController.m */; };
 		11657F092013842200CA4116 /* BottomLeftButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F082013842200CA4116 /* BottomLeftButtonController.m */; };
@@ -92,8 +92,8 @@
 		114519EB2014CF450082A061 /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
 		114519ED2014CF6F0082A061 /* YYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYButton.h; sourceTree = "<group>"; };
 		114519EE2014CF6F0082A061 /* YYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYButton.m; sourceTree = "<group>"; };
-		11657EFE201383E400CA4116 /* CenterButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterButtonController.h; sourceTree = "<group>"; };
-		11657EFF201383E400CA4116 /* CenterButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterButtonController.m; sourceTree = "<group>"; };
+		11657EFE201383E400CA4116 /* ImageViewRightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewRightController.h; sourceTree = "<group>"; };
+		11657EFF201383E400CA4116 /* ImageViewRightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewRightController.m; sourceTree = "<group>"; };
 		11657F01201383F800CA4116 /* LeftAndTopButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftAndTopButtonController.h; sourceTree = "<group>"; };
 		11657F02201383F800CA4116 /* LeftAndTopButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAndTopButtonController.m; sourceTree = "<group>"; };
 		11657F042013841100CA4116 /* RightAndTopButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightAndTopButtonController.h; sourceTree = "<group>"; };
@@ -197,6 +197,96 @@
 			path = UIButtonUITests;
 			sourceTree = "<group>";
 		};
+		111F75BD2016101A00C9EBF2 /* 图片右文字左 */ = {
+			isa = PBXGroup;
+			children = (
+				11657EFE201383E400CA4116 /* ImageViewRightController.h */,
+				11657EFF201383E400CA4116 /* ImageViewRightController.m */,
+			);
+			name = "图片右文字左";
+			sourceTree = "<group>";
+		};
+		111F75BE2016103300C9EBF2 /* 图片上文字下 */ = {
+			isa = PBXGroup;
+			children = (
+				11657F0D2013847900CA4116 /* ImageViewUpController.h */,
+				11657F0E2013847900CA4116 /* ImageViewUpController.m */,
+			);
+			name = "图片上文字下";
+			sourceTree = "<group>";
+		};
+		111F75BF2016108200C9EBF2 /* 图片下文字上 */ = {
+			isa = PBXGroup;
+			children = (
+				11657F102013849100CA4116 /* ImageViewDownController.h */,
+				11657F112013849100CA4116 /* ImageViewDownController.m */,
+			);
+			name = "图片下文字上";
+			sourceTree = "<group>";
+		};
+		111F75C02016109A00C9EBF2 /* 图片文字左上角 */ = {
+			isa = PBXGroup;
+			children = (
+				11657F01201383F800CA4116 /* LeftAndTopButtonController.h */,
+				11657F02201383F800CA4116 /* LeftAndTopButtonController.m */,
+			);
+			name = "图片文字左上角";
+			sourceTree = "<group>";
+		};
+		111F75C1201610B000C9EBF2 /* 图片文字右上角 */ = {
+			isa = PBXGroup;
+			children = (
+				11657F042013841100CA4116 /* RightAndTopButtonController.h */,
+				11657F052013841100CA4116 /* RightAndTopButtonController.m */,
+			);
+			name = "图片文字右上角";
+			sourceTree = "<group>";
+		};
+		111F75C2201610BE00C9EBF2 /* 图片文字左下角 */ = {
+			isa = PBXGroup;
+			children = (
+				11657F072013842200CA4116 /* BottomLeftButtonController.h */,
+				11657F082013842200CA4116 /* BottomLeftButtonController.m */,
+			);
+			name = "图片文字左下角";
+			sourceTree = "<group>";
+		};
+		111F75C3201610D300C9EBF2 /* 图片文字右下角 */ = {
+			isa = PBXGroup;
+			children = (
+				11657F0A2013843900CA4116 /* BottomRightButtonController.h */,
+				11657F0B2013843900CA4116 /* BottomRightButtonController.m */,
+			);
+			name = "图片文字右下角";
+			sourceTree = "<group>";
+		};
+		111F75C4201610E100C9EBF2 /* 图片大于按钮宽度 */ = {
+			isa = PBXGroup;
+			children = (
+				11657F13201384AB00CA4116 /* ImageIsBiggerController.h */,
+				11657F14201384AB00CA4116 /* ImageIsBiggerController.m */,
+			);
+			name = "图片大于按钮宽度";
+			sourceTree = "<group>";
+		};
+		111F75C52016127400C9EBF2 /* 静态使用 */ = {
+			isa = PBXGroup;
+			children = (
+				114519E42014BCAB0082A061 /* BasicLayoutController.h */,
+				114519E52014BCAB0082A061 /* BasicLayoutController.m */,
+			);
+			name = "静态使用";
+			sourceTree = "<group>";
+		};
+		111F75C62016128500C9EBF2 /* 动态使用 */ = {
+			isa = PBXGroup;
+			children = (
+				114519E72014BDC70082A061 /* DynamicViewController.h */,
+				114519E82014BDC70082A061 /* DynamicViewController.m */,
+			);
+			name = "动态使用";
+			sourceTree = "<group>";
+		};
 		114519C120145FA20082A061 /* 基础知识 */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,22 +308,14 @@
 		114519C320145FCB0082A061 /* detail */ = {
 			isa = PBXGroup;
 			children = (
-				11657EFE201383E400CA4116 /* CenterButtonController.h */,
-				11657EFF201383E400CA4116 /* CenterButtonController.m */,
-				11657F01201383F800CA4116 /* LeftAndTopButtonController.h */,
-				11657F02201383F800CA4116 /* LeftAndTopButtonController.m */,
-				11657F042013841100CA4116 /* RightAndTopButtonController.h */,
-				11657F052013841100CA4116 /* RightAndTopButtonController.m */,
-				11657F072013842200CA4116 /* BottomLeftButtonController.h */,
-				11657F082013842200CA4116 /* BottomLeftButtonController.m */,
-				11657F0A2013843900CA4116 /* BottomRightButtonController.h */,
-				11657F0B2013843900CA4116 /* BottomRightButtonController.m */,
-				11657F0D2013847900CA4116 /* ImageViewUpController.h */,
-				11657F0E2013847900CA4116 /* ImageViewUpController.m */,
-				11657F102013849100CA4116 /* ImageViewDownController.h */,
-				11657F112013849100CA4116 /* ImageViewDownController.m */,
-				11657F13201384AB00CA4116 /* ImageIsBiggerController.h */,
-				11657F14201384AB00CA4116 /* ImageIsBiggerController.m */,
+				111F75BD2016101A00C9EBF2 /* 图片右文字左 */,
+				111F75BE2016103300C9EBF2 /* 图片上文字下 */,
+				111F75BF2016108200C9EBF2 /* 图片下文字上 */,
+				111F75C02016109A00C9EBF2 /* 图片文字左上角 */,
+				111F75C1201610B000C9EBF2 /* 图片文字右上角 */,
+				111F75C2201610BE00C9EBF2 /* 图片文字左下角 */,
+				111F75C3201610D300C9EBF2 /* 图片文字右下角 */,
+				111F75C4201610E100C9EBF2 /* 图片大于按钮宽度 */,
 			);
 			name = detail;
 			sourceTree = "<group>";
@@ -281,10 +363,8 @@
 			children = (
 				114519D3201461E80082A061 /* LayoutViewController.h */,
 				114519D4201461E80082A061 /* LayoutViewController.m */,
-				114519E42014BCAB0082A061 /* BasicLayoutController.h */,
-				114519E52014BCAB0082A061 /* BasicLayoutController.m */,
-				114519E72014BDC70082A061 /* DynamicViewController.h */,
-				114519E82014BDC70082A061 /* DynamicViewController.m */,
+				111F75C52016127400C9EBF2 /* 静态使用 */,
+				111F75C62016128500C9EBF2 /* 动态使用 */,
 				114519DC2014638B0082A061 /* YYLayoutButton.h */,
 				114519DD2014638B0082A061 /* YYLayoutButton.m */,
 			);
@@ -458,7 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				114519D5201461E80082A061 /* LayoutViewController.m in Sources */,
-				11657F00201383E400CA4116 /* CenterButtonController.m in Sources */,
+				11657F00201383E400CA4116 /* ImageViewRightController.m in Sources */,
 				114519E62014BCAB0082A061 /* BasicLayoutController.m in Sources */,
 				114519EF2014CF6F0082A061 /* YYButton.m in Sources */,
 				111588411EC6DE8800A8F92B /* ViewController.m in Sources */,

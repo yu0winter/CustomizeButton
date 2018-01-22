@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CenterButtonController : UIViewController
+@interface ImageViewRightController : UIViewController
 
 @end

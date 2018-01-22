@@ -6,7 +6,7 @@
 //  Copyright © 2018年 杨世川. All rights reserved.
 //
 
-#import "CenterButtonController.h"
+#import "ImageViewRightController.h"
 
 #define ScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -16,11 +16,11 @@ static CGFloat imageViewY = 0;
 static CGFloat titleLabelX = 0;
 static CGFloat titleLabelY = 0;
 
-@interface CenterButtonController ()
+@interface ImageViewRightController ()
 
 @end
 
-@implementation CenterButtonController
+@implementation ImageViewRightController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

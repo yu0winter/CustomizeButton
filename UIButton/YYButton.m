@@ -10,16 +10,17 @@
 
 @interface YYButton ()
 
+//button
+@property (nonatomic,assign) CGFloat buttonW;
+@property (nonatomic,assign) CGFloat buttonH;
+//imageView
+@property (nonatomic,assign) CGFloat imageViewX;
+@property (nonatomic,assign) CGFloat imageViewY;
+//titleLabel
 @property (nonatomic,assign) CGFloat titleWidth;
 @property (nonatomic,assign) CGFloat titleHeight;
 @property (nonatomic,assign) CGFloat titleLabelX;
 @property (nonatomic,assign) CGFloat titleLabelY;
-
-@property (nonatomic,assign) CGFloat imageViewX;
-@property (nonatomic,assign) CGFloat imageViewY;
-
-@property (nonatomic,assign) CGFloat buttonW;
-@property (nonatomic,assign) CGFloat buttonH;
 
 @end
 
@@ -38,15 +39,19 @@
 #pragma mark - 初始化参数
 - (void)initPara
 {
-    self.buttonImageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.buttonTitleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.imageViewWidth = 0;
-    self.imageViewHeight = 0;
-    self.titleFont = 15.0;
     self.buttonW = 0;
     self.buttonH = 0;
 
+    self.titleFont = 15.0;
+    self.imageViewWidth = 0;
+    self.imageViewHeight = 0;
+    self.buttonImageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.buttonTitleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+
     self.imageType = YYLayoutButtonTypeImageRight;
+    self.positionType = YYLayoutPositionTypeStretchNormal;
+    self.hitTestEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.imageView.backgroundColor = [UIColor redColor];
     self.titleLabel.backgroundColor = [UIColor greenColor];
@@ -267,7 +272,7 @@
 {
     [super setTitle:title forState:state];
 
-    if (self.positionType == YYLayoutPositionTypeLeftUnchanged)
+    if (self.positionType == YYLayoutPositionTypeStretchLeft)
     {
         CGSize titleSize = [self calculateTitleSizeWithText:title];
         CGRect frame = self.frame;

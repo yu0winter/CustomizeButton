@@ -19,32 +19,34 @@ typedef NS_ENUM(NSInteger, YYLayoutButtonType) {
     YYLayoutButtonTypeImageRight
 };
 
+//动态改变按钮内部文字
 typedef NS_ENUM(NSInteger, YYLayoutPositionType) {
     //左侧位置固定不变，向右伸展
-    YYLayoutPositionTypeOrigin = 0,
+    YYLayoutPositionTypeStretchNormal = 0,
     //右侧固定不变，向左伸展
-    YYLayoutPositionTypeLeftUnchanged
+    YYLayoutPositionTypeStretchLeft
 };
 
 @interface YYButton : UIButton
 
-//设置图片边距、默认为(0,0,0,0)
-@property (nonatomic,assign) UIEdgeInsets buttonImageEdgeInsets;
-//设置文字边距、默认为(0,0,0,0)
-@property (nonatomic,assign) UIEdgeInsets buttonTitleEdgeInsets;
-//图片高度、默认是图片高度
-@property (nonatomic,assign) CGFloat imageViewHeight;
-//图片高度、默认是图片宽度
-@property (nonatomic,assign) CGFloat imageViewWidth;
-//默认是15.0
+//titleLabel字体大小、默认是15.0
 @property (nonatomic,assign) CGFloat titleFont;
-//默认字体是
+//titleLabel字体名称、默认字体
 @property (nonatomic,strong) NSString *fontName;
-//按钮类型
+//imageView高度、默认是图片宽度
+@property (nonatomic,assign) CGFloat imageViewWidth;
+//imageView高度、默认是图片高度
+@property (nonatomic,assign) CGFloat imageViewHeight;
+//imageView边距、默认为(0,0,0,0)
+@property (nonatomic,assign) UIEdgeInsets buttonImageEdgeInsets;
+//titleLabel边距、默认为(0,0,0,0)
+@property (nonatomic,assign) UIEdgeInsets buttonTitleEdgeInsets;
+
+//button类型
 @property (nonatomic,assign) YYLayoutButtonType imageType;
-//position类型
+//button动态伸展方向
 @property (nonatomic,assign) YYLayoutPositionType positionType;
-//扩大响应区域
+//扩大button响应区域
 @property (nonatomic,assign) UIEdgeInsets hitTestEdgeInsets;
 
 @end
