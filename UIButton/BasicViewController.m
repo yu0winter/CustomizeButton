@@ -70,7 +70,7 @@
 {
     if (!_dataArray)
     {
-        _dataArray = [[NSMutableArray alloc]initWithObjects:@"CenterButtonController",
+        _dataArray = [[NSMutableArray alloc]initWithObjects:@"ImageViewRightController",
                       @"ImageViewUpController",
                       @"ImageViewDownController",
                       @"LeftAndTopButtonController",

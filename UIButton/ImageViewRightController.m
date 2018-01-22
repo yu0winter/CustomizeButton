@@ -60,8 +60,6 @@ static CGFloat titleLabelY = 0;
     titleLabelX = 107.5;
     titleLabelY = 89.5;
     [self setBorderLineWith:btn];
-    NSLog(@"imageView.frame = %@",NSStringFromCGRect(btn.imageView.frame));
-    NSLog(@"titleLable.frame = %@",NSStringFromCGRect(btn.titleLabel.frame));
 }
 
 //添加边界线、方便观察
