@@ -7,7 +7,6 @@
 //
 
 #import "LayoutViewController.h"
-#import "YYLayoutButton.h"
 
 #define ScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -73,7 +72,7 @@
     if (!_dataArray)
     {
         _dataArray = [[NSMutableArray alloc]initWithObjects:@"BasicLayoutController",
-                      @"DynamicViewController",
+                      @"DynamicViewController",@"AutoLayoutViewController",
                       nil];
     }
 
@@ -85,7 +84,7 @@
     if (!_sourceArray)
     {
         _sourceArray = [[NSMutableArray alloc]initWithObjects:@"方法静态使用",
-                        @"方法动态使用",
+                        @"方法动态使用",@"自定义布局",
                         nil];
     }
 

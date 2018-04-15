@@ -34,6 +34,10 @@
 		11657F0F2013847900CA4116 /* ImageViewUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F0E2013847900CA4116 /* ImageViewUpController.m */; };
 		11657F122013849100CA4116 /* ImageViewDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F112013849100CA4116 /* ImageViewDownController.m */; };
 		11657F15201384AB00CA4116 /* ImageIsBiggerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11657F14201384AB00CA4116 /* ImageIsBiggerController.m */; };
+		3D746403A957A86A95610376 /* libPods-UIButtonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F32CCE40D1CBDCBE9B81946F /* libPods-UIButtonTests.a */; };
+		8716E6A5024F83B83684480B /* libPods-UIButtonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A55C33BB1DA502FA2F885909 /* libPods-UIButtonUITests.a */; };
+		E0C08C239585925B55401B20 /* libPods-UIButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B516E7AA80919D74B0910057 /* libPods-UIButton.a */; };
+		EAE0AEFF2082F4AC00A59CC0 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE0AEFE2082F4AC00A59CC0 /* AutoLayoutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +112,17 @@
 		11657F112013849100CA4116 /* ImageViewDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewDownController.m; sourceTree = "<group>"; };
 		11657F13201384AB00CA4116 /* ImageIsBiggerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageIsBiggerController.h; sourceTree = "<group>"; };
 		11657F14201384AB00CA4116 /* ImageIsBiggerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageIsBiggerController.m; sourceTree = "<group>"; };
+		5C5BF1C93F998537E0AC2101 /* Pods-UIButtonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIButtonTests/Pods-UIButtonTests.release.xcconfig"; sourceTree = "<group>"; };
+		A55C33BB1DA502FA2F885909 /* libPods-UIButtonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIButtonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B516E7AA80919D74B0910057 /* libPods-UIButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDD8356EE9585A926B1B363 /* Pods-UIButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIButton/Pods-UIButton.debug.xcconfig"; sourceTree = "<group>"; };
+		DEAB4FF294D81AF0D7806F0F /* Pods-UIButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIButtonTests/Pods-UIButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8483443F71256BFA4DFB4F2 /* Pods-UIButtonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIButtonUITests/Pods-UIButtonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAE0AEFD2082F4AC00A59CC0 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
+		EAE0AEFE2082F4AC00A59CC0 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
+		F32CCE40D1CBDCBE9B81946F /* libPods-UIButtonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIButtonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41FA8872364D0CD057251FD /* Pods-UIButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIButton/Pods-UIButton.release.xcconfig"; sourceTree = "<group>"; };
+		F71D3DE73804F2B5DFD45DCE /* Pods-UIButtonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIButtonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIButtonUITests/Pods-UIButtonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C08C239585925B55401B20 /* libPods-UIButton.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D746403A957A86A95610376 /* libPods-UIButtonTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8716E6A5024F83B83684480B /* libPods-UIButtonUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +160,8 @@
 				111588521EC6DE8800A8F92B /* UIButtonTests */,
 				1115885D1EC6DE8800A8F92B /* UIButtonUITests */,
 				111588371EC6DE8800A8F92B /* Products */,
+				8B89321F40C9510FE9771961 /* Pods */,
+				3E366A3A3DCCBB68D65227CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,7 +182,6 @@
 				114519C520145FF10082A061 /* mainController */,
 				114519C120145FA20082A061 /* 基础知识 */,
 				114519C62014600B0082A061 /* 自定义Button */,
-				114519CC201461170082A061 /* 扩大按钮的响应区域 */,
 				114519E320146C500082A061 /* Button封装最终版 */,
 				114519E2201463C90082A061 /* other */,
 				111588391EC6DE8800A8F92B /* Supporting Files */,
@@ -341,6 +360,7 @@
 		114519C62014600B0082A061 /* 自定义Button */ = {
 			isa = PBXGroup;
 			children = (
+				114519CC201461170082A061 /* 扩大按钮的响应区域 */,
 				114519C7201460220082A061 /* 重写系统Rect方法 */,
 				114519C8201460300082A061 /* 重写系统layoutSubviews方法 */,
 			);
@@ -367,6 +387,7 @@
 				111F75C62016128500C9EBF2 /* 动态使用 */,
 				114519DC2014638B0082A061 /* YYLayoutButton.h */,
 				114519DD2014638B0082A061 /* YYLayoutButton.m */,
+				EAE0AF002082F4B000A59CC0 /* 自定义布局 */,
 			);
 			name = "重写系统layoutSubviews方法";
 			sourceTree = "<group>";
@@ -404,6 +425,38 @@
 			name = "Button封装最终版";
 			sourceTree = "<group>";
 		};
+		3E366A3A3DCCBB68D65227CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B516E7AA80919D74B0910057 /* libPods-UIButton.a */,
+				F32CCE40D1CBDCBE9B81946F /* libPods-UIButtonTests.a */,
+				A55C33BB1DA502FA2F885909 /* libPods-UIButtonUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B89321F40C9510FE9771961 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD8356EE9585A926B1B363 /* Pods-UIButton.debug.xcconfig */,
+				F41FA8872364D0CD057251FD /* Pods-UIButton.release.xcconfig */,
+				DEAB4FF294D81AF0D7806F0F /* Pods-UIButtonTests.debug.xcconfig */,
+				5C5BF1C93F998537E0AC2101 /* Pods-UIButtonTests.release.xcconfig */,
+				F71D3DE73804F2B5DFD45DCE /* Pods-UIButtonUITests.debug.xcconfig */,
+				E8483443F71256BFA4DFB4F2 /* Pods-UIButtonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAE0AF002082F4B000A59CC0 /* 自定义布局 */ = {
+			isa = PBXGroup;
+			children = (
+				EAE0AEFD2082F4AC00A59CC0 /* AutoLayoutViewController.h */,
+				EAE0AEFE2082F4AC00A59CC0 /* AutoLayoutViewController.m */,
+			);
+			name = "自定义布局";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,9 +464,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 111588631EC6DE8800A8F92B /* Build configuration list for PBXNativeTarget "UIButton" */;
 			buildPhases = (
+				41D32D70DBBFB7CF5852E0CF /* [CP] Check Pods Manifest.lock */,
 				111588321EC6DE8800A8F92B /* Sources */,
 				111588331EC6DE8800A8F92B /* Frameworks */,
 				111588341EC6DE8800A8F92B /* Resources */,
+				220AF037F1D6A17C20464F9A /* [CP] Embed Pods Frameworks */,
+				962B7B17796DB68859E83FF3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,9 +484,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 111588661EC6DE8800A8F92B /* Build configuration list for PBXNativeTarget "UIButtonTests" */;
 			buildPhases = (
+				FD52E6C35C45D6B55C605389 /* [CP] Check Pods Manifest.lock */,
 				1115884B1EC6DE8800A8F92B /* Sources */,
 				1115884C1EC6DE8800A8F92B /* Frameworks */,
 				1115884D1EC6DE8800A8F92B /* Resources */,
+				C5C45AD7C99B82F384803019 /* [CP] Embed Pods Frameworks */,
+				623DD9A3A4BA45E84D0A8D7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -446,9 +505,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 111588691EC6DE8800A8F92B /* Build configuration list for PBXNativeTarget "UIButtonUITests" */;
 			buildPhases = (
+				02A86162579C8EBDC7643E67 /* [CP] Check Pods Manifest.lock */,
 				111588561EC6DE8800A8F92B /* Sources */,
 				111588571EC6DE8800A8F92B /* Frameworks */,
 				111588581EC6DE8800A8F92B /* Resources */,
+				ACD8E58B3C516EA446F2D856 /* [CP] Embed Pods Frameworks */,
+				E88A31F5D5B5ACB852BABAB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,6 +594,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02A86162579C8EBDC7643E67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIButtonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		220AF037F1D6A17C20464F9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButton/Pods-UIButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41D32D70DBBFB7CF5852E0CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623DD9A3A4BA45E84D0A8D7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButtonTests/Pods-UIButtonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962B7B17796DB68859E83FF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButton/Pods-UIButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACD8E58B3C516EA446F2D856 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButtonUITests/Pods-UIButtonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C45AD7C99B82F384803019 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButtonTests/Pods-UIButtonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E88A31F5D5B5ACB852BABAB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIButtonUITests/Pods-UIButtonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD52E6C35C45D6B55C605389 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIButtonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		111588321EC6DE8800A8F92B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -550,6 +759,7 @@
 				11657F15201384AB00CA4116 /* ImageIsBiggerController.m in Sources */,
 				114519CF201461530082A061 /* BasicViewController.m in Sources */,
 				114519E92014BDC70082A061 /* DynamicViewController.m in Sources */,
+				EAE0AEFF2082F4AC00A59CC0 /* AutoLayoutViewController.m in Sources */,
 				11657F0C2013843900CA4116 /* BottomRightButtonController.m in Sources */,
 				11657F03201383F800CA4116 /* LeftAndTopButtonController.m in Sources */,
 				114519D2201461D20082A061 /* RectViewController.m in Sources */,
@@ -697,6 +907,7 @@
 		};
 		111588641EC6DE8800A8F92B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDD8356EE9585A926B1B363 /* Pods-UIButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIButton/Info.plist;
@@ -708,6 +919,7 @@
 		};
 		111588651EC6DE8800A8F92B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41FA8872364D0CD057251FD /* Pods-UIButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIButton/Info.plist;
@@ -719,6 +931,7 @@
 		};
 		111588671EC6DE8800A8F92B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEAB4FF294D81AF0D7806F0F /* Pods-UIButtonTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = UIButtonTests/Info.plist;
@@ -731,6 +944,7 @@
 		};
 		111588681EC6DE8800A8F92B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5BF1C93F998537E0AC2101 /* Pods-UIButtonTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = UIButtonTests/Info.plist;
@@ -743,6 +957,7 @@
 		};
 		1115886A1EC6DE8800A8F92B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71D3DE73804F2B5DFD45DCE /* Pods-UIButtonUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = UIButtonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -755,6 +970,7 @@
 		};
 		1115886B1EC6DE8800A8F92B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8483443F71256BFA4DFB4F2 /* Pods-UIButtonUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = UIButtonUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
